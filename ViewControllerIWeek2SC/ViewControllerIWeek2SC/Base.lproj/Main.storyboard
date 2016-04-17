@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1ik-o5-AWA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="View Controller1" customClass="ViewController" customModule="ViewControllerIWeek2SC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EI8-EM-duR" userLabel="txtName">
+                                <rect key="frame" x="105" y="65" width="180" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dEZ-B0-bjL" userLabel="txtAge">
+                                <rect key="frame" x="105" y="120" width="180" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Placeholder text, replace me!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QY-Ao-k5o" userLabel="lblText">
+                                <rect key="frame" x="105" y="426" width="320" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXZ-P7-nUJ" userLabel="btnFunc1">
+                                <rect key="frame" x="105" y="200" width="140" height="30"/>
+                                <state key="normal" title="1. Say &quot;Hello World!&quot;"/>
+                                <connections>
+                                    <action selector="onClickBtnFunc1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHY-qc-3yc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMv-ek-qrN" userLabel="btnFunc2">
+                                <rect key="frame" x="105" y="249" width="198" height="30"/>
+                                <state key="normal" title="2. Say &quot;Hello Name and Age&quot;"/>
+                                <connections>
+                                    <action selector="onClickBtnFunc2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v4F-Op-ig1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGk-F3-rlc" userLabel="btnFunc3">
+                                <rect key="frame" x="105" y="299" width="103" height="30"/>
+                                <state key="normal" title="3. Validate Age"/>
+                                <connections>
+                                    <action selector="onClickBtnFunc3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yKG-ZU-iOO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pq-aC-nvc" userLabel="btnFunc4">
+                                <rect key="frame" x="105" y="352" width="182" height="30"/>
+                                <state key="normal" title="4. Comment on User's age"/>
+                                <connections>
+                                    <action selector="onClickBtnFunc4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="no1-h7-qal"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Updating Labels" id="UeG-lW-Ol8">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="QQe-yq-pvb">
+                            <connections>
+                                <segue destination="cQq-Dd-O8Z" kind="show" id="dZY-1F-j2O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnFunc1" destination="FXZ-P7-nUJ" id="z16-OB-Eqb"/>
+                        <outlet property="btnFunc2" destination="YMv-ek-qrN" id="tX3-mS-miC"/>
+                        <outlet property="btnFunc3" destination="qGk-F3-rlc" id="JZf-Si-Xni"/>
+                        <outlet property="btnFunc4" destination="3Pq-aC-nvc" id="afo-Mt-nPZ"/>
+                        <outlet property="lblText" destination="9QY-Ao-k5o" id="y60-AL-FkI"/>
+                        <outlet property="txtAge" destination="dEZ-B0-bjL" id="HXb-X4-et1"/>
+                        <outlet property="txtName" destination="EI8-EM-duR" id="3Wp-AH-GK7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="308"/>
+        </scene>
+        <!--AddingNumbers-->
+        <scene sceneID="v6I-vI-4dJ">
+            <objects>
+                <viewController id="cQq-Dd-O8Z" userLabel="AddingNumbers" customClass="AddingNumbers" customModule="ViewControllerIWeek2SC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yK8-dW-jvK"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZYC-Yf-Kc2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nNg-r2-mgT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p77-EY-KoT" userLabel="txtInput">
+                                <rect key="frame" x="113" y="124" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EA-7r-5TR" userLabel="lblAnswer">
+                                <rect key="frame" x="140" y="181" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kr-fi-nvp" userLabel="btnAdd">
+                                <rect key="frame" x="146" y="220" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="onClickbtnAdd:" destination="cQq-Dd-O8Z" eventType="touchUpInside" id="bVo-fd-P9k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adding Numbers" id="z1o-sC-A1d">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="WUk-dk-6j9">
+                            <connections>
+                                <segue destination="kES-Zi-ATv" kind="show" id="vik-mB-dfE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnAdd" destination="3Kr-fi-nvp" id="zdf-Le-bwt"/>
+                        <outlet property="lblAnswer" destination="0EA-7r-5TR" id="2XX-V8-IFo"/>
+                        <outlet property="txtInput" destination="p77-EY-KoT" id="Ouv-iC-51u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4c-gU-kuK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1753" y="308"/>
+        </scene>
+        <!--EvenNumber-->
+        <scene sceneID="dsA-MM-Sam">
+            <objects>
+                <viewController id="kES-Zi-ATv" userLabel="EvenNumber" customClass="EvenNumber" customModule="ViewControllerIWeek2SC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MS2-m6-l9M"/>
+                        <viewControllerLayoutGuide type="bottom" id="quH-Qp-tTf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j8n-ZO-bx4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yd-1l-ZJs" userLabel="btnCalculate">
+                                <rect key="frame" x="192" y="219" width="64" height="30"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="onClickBtnCalc:" destination="kES-Zi-ATv" eventType="touchUpInside" id="6qw-4M-DnU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IrP-P7-VtH" userLabel="txtNumber">
+                                <rect key="frame" x="176" y="145" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Even / Odd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUa-aA-4fe" userLabel="lblAns">
+                                <rect key="frame" x="182" y="281" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" id="cco-yO-30T">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J9c-y3-kNu" userLabel="Fibonacci">
+                                <rect key="frame" x="447" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="next"/>
+                            </button>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Even / Odd" id="wsC-Va-K9O">
+                        <barButtonItem key="rightBarButtonItem" title="Fibonacci" id="pII-HT-glB">
+                            <connections>
+                                <segue destination="FOM-BC-Vsy" kind="show" id="VY8-hh-lgg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btnCalculate" destination="6Yd-1l-ZJs" id="PTk-UC-fnV"/>
+                        <outlet property="lblAns" destination="WUa-aA-4fe" id="r7Z-pT-svA"/>
+                        <outlet property="txtNumber" destination="IrP-P7-VtH" id="xht-5M-0hG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKL-Sn-NtU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2419" y="314"/>
+        </scene>
+        <!--FibonacciAdder-->
+        <scene sceneID="xRi-Vs-Aex">
+            <objects>
+                <viewController id="FOM-BC-Vsy" userLabel="FibonacciAdder" customClass="FibonacciAdder" customModule="ViewControllerIWeek2SC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T40-Dc-VcK"/>
+                        <viewControllerLayoutGuide type="bottom" id="tXP-LC-RmN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CU4-Yl-Ax1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PRJ-uI-Vja" userLabel="txtIndex">
+                                <rect key="frame" x="120" y="105" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYE-jL-5uC" userLabel="btnCalc">
+                                <rect key="frame" x="101" y="171" width="134" height="30"/>
+                                <state key="normal" title="Calculate Fibonacci"/>
+                                <connections>
+                                    <action selector="onClickBtnCalc:" destination="FOM-BC-Vsy" eventType="touchUpInside" id="nlg-dU-PbW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVf-B7-xhF" userLabel="lblFibonacci">
+                                <rect key="frame" x="114" y="225" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnCalc" destination="TYE-jL-5uC" id="Rtf-Nf-ofq"/>
+                        <outlet property="lblFibonacci" destination="mVf-B7-xhF" id="rl7-kj-gu9"/>
+                        <outlet property="txtIndex" destination="PRJ-uI-Vja" id="M4f-gi-ZgU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="byU-7T-414" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3081" y="308"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wua-D6-jp7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1ik-o5-AWA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Atb-Sd-v3F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lmg-IV-dnj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUx-sV-a1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="308"/>
+        </scene>
+    </scenes>
+</document>
